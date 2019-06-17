@@ -14,40 +14,41 @@ html {
 	padding: 0;
 	}
 body {
-	font: 75% helvetica, sans-serif;
+	font: 75% courier, sans-serif;
 	line-height: 1.88889;
-	color: #red;
-	background: #000
+	color: black;
+	background: red;
   url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
 	margin: 0;
 	padding: 0;
+
 	}
 p {
 	margin-top: 7;
 	text-align: justify;
 	}
 h3 {
-	font: normal 2.4em impact, sans-serif;
-	color: #fff;
+	font: normal 2.4em Futura, sans-serif;
+	color: #000;
 	letter-spacing: 1px;
 	margin-bottom: 0;
 	margin-left: -180px;
-	background-color: black;
+
 
 	}
 a:link {
 	font-weight: bold;
 	text-decoration: none;
-	color: #B7A5DF;
+	color: turquoise;
 	}
 a:visited {
 	font-weight: bold;
 	text-decoration: none;
-	color: #D4CDDC;
+	color: turquoise;
 	}
 a:hover, a:focus, a:active {
 	text-decoration: underline;
-	color: #9685BA;
+	color: turquoise;
 	}
 abbr {
 	border-bottom: none;
@@ -56,7 +57,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper {
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
+
 	padding: 0 175px 0 110px;
 	margin: 0;
 	position: relative;
@@ -68,93 +69,136 @@ abbr {
 	}
 
 header h1 {
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+
 	margin-top: 10px;
 	display: block;
 	width: 219px;
 	height: 87px;
 	float: left;
-
-	text-indent: 100%;
+	text-indent: 4%;
 	white-space: nowrap;
-	overflow: hidden;
+
+
 	}
+
 header h2 {
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left;
-	margin-top: 58px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	width: 200px;
 	height: 18px;
-	float: right;
+	margin-left: 10px;
 
-	text-indent: 100%;
+	text-indent: -14%;
 	white-space: nowrap;
-	overflow: hidden;
+	color: turquoise;
 	}
 header {
 	padding-top: 20px;
-	height: 87px;
+	height: 80px;
 }
 
 .summary {
 	clear: both;
-	margin: 50px 140px 120px 80px;
-	width: 200px;
+	margin: 50px 10px 10px 10px;
+	width: 250px;
 	float: left;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 50 auto 20px;
+	background-color: black;
 	}
 .summary p {
-	font: italic 1.1em/2.2 georgia;
+	font:  0.9em/2.0 futura, thin;
 	text-align: center;
+	color: white;
 	}
 
-.preamble {
+.preamble p{
 	clear: right;
-	padding: 0px 200px 10px;
-	background-color: #fff
+	margin: 0px 0px 0px 700px;
+	background-color: ;
+	border: ;
+	}
+	.preamble h3{
+		margin-left: 700px;
 	}
 .supporting {
-	padding-left: 10px;
+	padding-left: 100px;
 	margin-bottom: 40px;
 	margin-left: 200px;
-	margin-right: 200px;
+	margin-right: 350px;
 	perspective: 1000px;
 	transform:rotateX(0deg);
+
 	}
-	.supporting .explanation:hover {
-	transform:rotate(0deg);
-		}
-	.explanation{
+
+	.explanation p{
   transition: .3s;
-  transform: rotateX(60deg);
-	background-color: #fff;
-}
-.supporting .participation:hover {
-transform:rotate(0deg);
+  transform: rotateX(58deg);
+	opacity: 0;
+	background-color: ;
+	margin: 0px 400px 10px 20px;
 
-	}
-.participation {
-transition: .3s;
-transform: rotateX(80deg);
-
-background-color: #fff;
 }
-.supporting .benefits:hover {
+.supporting .explanation:hover p{
 transform:rotate(0deg);
+opacity: 100;
 	}
-.benefits p{
+.explanation h3{
+	margin-left: 20px;
+}
+
+.participation p{
 transition: .3s;
 transform: rotateX(70deg);
-background-color: #fff
+opacity: 0;
+background-color: ;
+margin: 0px 0px 0px 400px;
+
 }
+
+.supporting .participation:hover p{
+transform:rotateX(0deg);
+opacity: 100;
+
+	}
+	.participation h3{
+	margin-left: 400px;
+	}
+
+.benefits p{
+transition: .3s;
+transform: rotateX(90deg);
+opacity: 0;
+background-color: ;
+margin: 0px 400px 10px 0px;
+
+}
+.supporting .benefits:hover p{
+transform:rotateX(0deg);
+opacity: 100;
+	}
+.benefits h3{
+		margin-left: 240px;
+	}
 
 .requirements p {
 transition: .3s;
-transform: rotateX(70deg);
-background-color: #fff
+transform: rotateX(95deg);
+opacity: 0;
+background-color:;
+margin: 0px 0px 0px 400px;
+
 }
 
 .supporting .requirements:hover p {
 transform:rotateX(0deg);
+opacity: 100;
+}
+.requirements h3{
+	margin-left: 400px;
 	}
 
 footer {
@@ -169,43 +213,47 @@ footer a:link, footer a:visited {
 	position: absolute;
 	top: 0;
 	right: 0;
+	background-color: black;
 	}
 .sidebar .wrapper {
-	font: 10px verdana, sans-serif;
+	font: 10px courier, sans-serif;
 	background: transparent url() top left repeat-y;
 	padding: 10px;
 	margin-top: 150px;
 	width: 130px;
+	color: white;
 	}
 .sidebar h3.select {
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
-	margin: 10px 0 5px 0;
+	margin: 15px 10px 10px 0px;
 	width: 97px;
-	height: 16px;
+	height: 0px;
+	font:15px ITC Lubalin Graph;
+		color: red;
 
-	text-indent: 100%;
+
 	white-space: nowrap;
-	overflow: hidden;
 	}
 .sidebar h3.archives {
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left;
-	margin: 25px 0 5px 0;
+	margin: 15px 10px 10px 0px;
 	width:57px;
-	height: 14px;
+	height: 0px;
+	font:15px ITC Lubalin Graph;
+		color: red;
 
-	text-indent: 100%;
+
 	white-space: nowrap;
-	overflow: hidden;
+
 	}
-.sidebar h3.resources {
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;
-	margin: 25px 0 5px 0;
-	width:63px;
-	height: 10px;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+.sidebar h3.resources {
+	margin: 15px 10px 10px 0px;
+	width:63px;
+	height: 0px;
+
+	font:15px ITC Lubalin Graph;
+	color: red;
+
+
 	}
 
 
@@ -215,22 +263,22 @@ footer a:link, footer a:visited {
 	}
 .sidebar li {
 	line-height: 1.3em;
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
 	display: block;
-	padding-top: 5px;
+	padding-top: 3px;
 	margin-bottom: 5px;
 	list-style-type: none;
+
 	}
 .sidebar li a:link {
-	color: #red;
+	color: gray;
 	}
 .sidebar li a:visited {
-	color: #blue;
+	color: turquoise;
 	}
 
 
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;
+
 	position: absolute;
 	top: 40px;
 	right: 0;
